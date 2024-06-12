@@ -16,6 +16,8 @@ class CharactersCubit extends Cubit<CharactersState> {
   List<CharactersModel> getAllCharacters() {
     charactersrepository.getAllCharacters().then((characters) {
       emit(CharactersLoaded(characters.cast<Characters>()));
+      this.characters =
+          characters; //this.characters means the list var characters above in line 11
     });
 
     return characters;
