@@ -10,6 +10,9 @@ class Charactersscreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: ColorsDesign.light,
       ),
+      body: SingleChildScrollView(
+          // child: ConstrainedBox(constraints: BoxConstraints(   IntrinsicHeight(),),
+          ),
     );
   }
 }
