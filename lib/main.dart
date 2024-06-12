@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:series_apis/app.router.dart';
 
 void main() {
-  runApp(breakingbad(
+  runApp(BreakingBad(
     appRouter: AppRouter(),
   ));
 }
 
-class breakingbad extends StatelessWidget {
+class BreakingBad extends StatelessWidget {
   final AppRouter appRouter;
 
-  const breakingbad({Key? key, required this.appRouter}) : super(key: key);
+  const BreakingBad({super.key, required this.appRouter});
 
   // This widget is the root of your application.
   @override

@@ -14,7 +14,7 @@ import 'package:series_apis/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(breakingbad(
+    await tester.pumpWidget(BreakingBad(
       appRouter: AppRouter(),
     ));
 
