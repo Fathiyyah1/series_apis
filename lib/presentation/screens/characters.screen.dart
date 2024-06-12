@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:series_apis/business_logic/cubit/characters_cubit.dart';
 import 'package:series_apis/business_logic/cubit/characters_state.dart';
 import 'package:series_apis/constants/colors.dart';
+import 'package:series_apis/presentation/widgets/character_item.dart';
 
 import '../../data/models/characters.dart';
 
@@ -33,10 +34,18 @@ class _CharactersscreenState extends State<Charactersscreen> {
         } else if (state is CharactersErrors) {
           return ErrorMessageWidget();
         } else {
-          return Container();
+          return showLoadingIndicator();
         }
       },
     );
+  }
+
+//else last statement condition
+  Widget showLoadingIndicator() {
+    return Center(
+        child: CircularProgressIndicator(
+      color: ColorsDesign.dark,
+    ));
   }
 
   //Widget error message element
@@ -71,7 +80,7 @@ class _CharactersscreenState extends State<Charactersscreen> {
           mainAxisSpacing: 1,
         ),
         itemBuilder: (context, index) {
-          return Container();
+          return CharacterItem();
         });
   }
 
