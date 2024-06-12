@@ -1,4 +1,4 @@
-final baseURL = 'https://rickandmortyapi.com/api/';
+final baseUrl = 'https://rickandmortyapi.com/api/';
 
 const AllCharactersRoute = '/';
 const characterDetailsScreen = '/character_details';
