@@ -6,7 +6,7 @@ class Charactersscreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Text("hi i'm fatheya"),
+      child: Center(child: Text("hi i'm fatheya")),
     );
   }
 }
