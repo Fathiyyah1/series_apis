@@ -79,6 +79,8 @@ class _CharactersscreenState extends State<Charactersscreen> {
           crossAxisSpacing: 1,
           mainAxisSpacing: 1,
         ),
+        shrinkWrap: true,
+        physics: const ClampingScrollPhysics(),
         itemBuilder: (context, index) {
           return CharacterItem();
         });
