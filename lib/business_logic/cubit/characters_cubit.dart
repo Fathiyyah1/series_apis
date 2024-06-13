@@ -8,12 +8,12 @@ import 'package:bloc/bloc.dart';
 
 class CharactersCubit extends Cubit<CharactersState> {
   final Charactersrepository charactersrepository;
-  late List<CharactersModel> characters;
+  late List<Character> characters;
 
   CharactersCubit(this.charactersrepository) : super(CharacterInitial());
 
   //in this function i'll recieve all the data from the Charactersrepository
-  List<CharactersModel> getAllCharacters() {
+  List<Character> getAllCharacters() {
     charactersrepository.getAllCharacters().then((characters) {
       emit(CharactersLoaded(characters.cast<Characters>()));
       this.characters =

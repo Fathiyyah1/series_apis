@@ -15,7 +15,7 @@ class Charactersscreen extends StatefulWidget {
 }
 
 class _CharactersscreenState extends State<Charactersscreen> {
-  late List<CharactersModel>
+  late List<Character>
       allCharacters; //you can instead of late use List<CharactersModel>?
 
   @override
@@ -29,7 +29,7 @@ class _CharactersscreenState extends State<Charactersscreen> {
     return BlocBuilder<CharactersCubit, CharactersState>(
       builder: (context, state) {
         if (state is CharactersLoaded) {
-          allCharacters = (state).characters.cast<CharactersModel>();
+          allCharacters = (state).characters.cast<Character>();
           return buildLoadedListWidgets();
         } else if (state is CharactersErrors) {
           return ErrorMessageWidget();
@@ -84,7 +84,7 @@ class _CharactersscreenState extends State<Charactersscreen> {
         itemCount: allCharacters.length,
         padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
-          return CharacterItem();
+          return CharacterItem(character: ,);
         });
   }
 

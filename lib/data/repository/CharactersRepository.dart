@@ -11,10 +11,10 @@ class Charactersrepository {
    characters var and then hande it to map as the style of data model i made in mdoels 
    then organize it that way as it is as lists
  */
-  Future<List<CharactersModel>> getAllCharacters() async {
+  Future<List<Character>> getAllCharacters() async {
     final characters = await charactersWebServices.getAllCharacters();
     return characters
-        .map((character) => CharactersModel.fromJson(character))
+        .map((character) => Character.fromJson(character))
         .toList();
   }
 }
