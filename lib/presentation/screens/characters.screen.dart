@@ -84,7 +84,8 @@ class _CharactersscreenState extends State<Charactersscreen> {
         itemCount: allCharacters.length,
         padding: EdgeInsets.zero,
         itemBuilder: (context, index) {
-          return CharacterItem(character: ,);
+          return Container();
+          // CharacterItem(character: ,);
         });
   }
 

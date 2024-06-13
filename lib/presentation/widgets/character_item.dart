@@ -18,6 +18,7 @@ class CharacterItem extends StatelessWidget {
           color: ColorsDesign.light, borderRadius: BorderRadius.circular(8)),
       child: Container(
         color: ColorsDesign.lightDark,
+        // child: ,
       ),
     );
   }
