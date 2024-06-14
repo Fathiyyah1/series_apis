@@ -34,7 +34,14 @@ class CharacterItem extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Text(
               '${character.name}',
-              style: TextStyle(fontWeight: FontWeight.w500),
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  height: 1.3,
+                  fontSize: 16,
+                  color: Colors.white),
+              overflow: TextOverflow.ellipsis,
+              maxLines: 2,
+              textAlign: TextAlign.center,
             ),
           )),
     );
