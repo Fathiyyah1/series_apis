@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:series_apis/data/models/characters.dart';
 
 abstract class CharactersState {}
@@ -10,7 +9,7 @@ class CharactersLoaded extends CharactersState {
   CharactersLoaded(this.characters);
 }
 
-class CharactersErrors extends CharactersState {
-  final String ErrorMessage;
-  CharactersErrors(this.ErrorMessage);
-}
+// class CharactersErrors extends CharactersState {
+//   final String ErrorMessage;
+//   CharactersErrors(this.ErrorMessage);
+// }

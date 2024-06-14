@@ -6,7 +6,7 @@ import 'package:bloc/bloc.dart';
 
 class CharactersCubit extends Cubit<CharactersState> {
   final Charactersrepository charactersrepository;
-  late List<Character> characters;
+  List<Character> characters = [];
 
   CharactersCubit(this.charactersrepository) : super(CharacterInitial());
 
