@@ -18,6 +18,9 @@ class CharacterItem extends StatelessWidget {
           color: ColorsDesign.light, borderRadius: BorderRadius.circular(8)),
       child: Container(
         color: ColorsDesign.lightDark,
+        child: character.image.isNotEmpty ? FadeInImage.assetNetwork(
+          width: double.infinity, height: double.infinity,
+          placeholder: 'assets/images/Animation.gif' , image: character.image),
         // child: ,
       ),
     );
