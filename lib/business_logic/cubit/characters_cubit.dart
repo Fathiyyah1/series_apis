@@ -1,8 +1,6 @@
-import 'package:characters/src/characters.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:series_apis/data/repository/CharactersRepository.dart';
 import '../../data/models/characters.dart';
-import 'package:meta/meta.dart';
 import 'characters_state.dart';
 import 'package:bloc/bloc.dart';
 
@@ -15,7 +13,7 @@ class CharactersCubit extends Cubit<CharactersState> {
   //in this function i'll recieve all the data from the Charactersrepository
   List<Character> getAllCharacters() {
     charactersrepository.getAllCharacters().then((characters) {
-      emit(CharactersLoaded(characters.cast<Characters>()));
+      emit(CharactersLoaded(characters.Characters()));
       this.characters =
           characters; //this.characters means the list var characters above in line 11
     });
