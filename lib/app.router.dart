@@ -4,7 +4,6 @@ import 'package:series_apis/business_logic/cubit/characters_cubit.dart';
 import 'package:series_apis/data/repository/CharactersRepository.dart';
 import 'package:series_apis/data/web_services/characters.web.services.dart';
 import 'package:series_apis/presentation/screens/characters.screen.dart';
-
 import 'constants/strings.dart';
 import 'presentation/screens/characters.details.dart';
 
