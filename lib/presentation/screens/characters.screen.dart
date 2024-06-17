@@ -11,7 +11,7 @@ class Charactersscreen extends StatefulWidget {
   const Charactersscreen({super.key});
 
   @override
-  State<Charactersscreen> createState() => _CharactersscreenState();
+  _CharactersscreenState createState() => _CharactersscreenState();
 }
 
 class _CharactersscreenState extends State<Charactersscreen> {
@@ -21,7 +21,7 @@ class _CharactersscreenState extends State<Charactersscreen> {
   @override
   void initState() {
     super.initState();
-    allCharacters = BlocProvider.of<CharactersCubit>(context)
+    BlocProvider.of<CharactersCubit>(context)
         .getAllCharacters(); //calling the cubit to get all the data and states
   }
 
@@ -46,14 +46,14 @@ class _CharactersscreenState extends State<Charactersscreen> {
     ));
   }
 
-  //Widget error message element
-  Widget ErrorMessageWidget() {
-    return Container(
-      child: Center(
-        child: Text("Error! Failed to load characters"),
-      ),
-    );
-  }
+  // //Widget error message element
+  // Widget ErrorMessageWidget() {
+  //   return Container(
+  //     child: Center(
+  //       child: Text("Error! Failed to load characters"),
+  //     ),
+  //   );
+  // }
 
 //screen structure
   Widget buildLoadedListWidgets() {

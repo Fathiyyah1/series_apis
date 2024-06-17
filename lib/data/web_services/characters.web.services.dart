@@ -8,7 +8,7 @@ class CharactersWebServices {
       baseUrl: baseUrl,
       receiveDataWhenStatusError: true,
       connectTimeout: 20 * 1000, //means 60 seconds
-      receiveTimeout: 20 * 1000,
+      receiveTimeout: 30 * 1000,
     );
 
     dio = Dio(options);
