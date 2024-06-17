@@ -18,6 +18,8 @@ class _CharactersscreenState extends State<Charactersscreen> {
   late List<Character>
       allCharacters; //you can instead of late use List<CharactersModel>?
   late List<Character> searchedForCharacters;
+  bool _isSearching = false;
+  final _searchTextController = TextEditingController();
 
   @override
   void initState() {
