@@ -17,6 +17,7 @@ class Charactersscreen extends StatefulWidget {
 class _CharactersscreenState extends State<Charactersscreen> {
   late List<Character>
       allCharacters; //you can instead of late use List<CharactersModel>?
+  late List<Character> searchedForCharacters;
 
   @override
   void initState() {
