@@ -21,6 +21,26 @@ class _CharactersscreenState extends State<Charactersscreen> {
   bool _isSearching = false;
   final _searchTextController = TextEditingController();
 
+  Widget _buildSearchField() {
+    return TextField(
+      controller: _searchTextController,
+      cursorColor: Colors.grey,
+      decoration: InputDecoration(
+          hintText: 'Find a character...',
+          border: InputBorder.none,
+          hintStyle: TextStyle(color: Colors.grey)),
+      style: TextStyle(color: Colors.grey, fontSize: 18),
+      onChanged: (searchedCharacters) {
+        addSearchedForItemsToSearchedList(searchedCharacters);
+      },
+    );
+  }
+
+  void addSearchedForItemsToSearchedList(String searchedCharacters){
+
+  }
+
+  
   @override
   void initState() {
     super.initState();
